@@ -1,0 +1,35 @@
+<div class="containerList">
+  <div class="row">
+      <div class="col-md-3">
+          <div class="card" >
+              <div class="card-header">
+                  Exercises
+              </div>
+              <div class="form-group row">
+                <div class="col-sm-10">
+                <input type="text" class="form-control" id="inputEx" placeholder="Exercise" [(ngModel)]="name"> 
+                </div>
+                <a class="btn btn-primary"  (click)="add()">Add Exercise</a>
+            </div>
+          </div>                  
+      </div>
+      <div class="col-md-9">
+          <div class="card" >
+              <div class="card-body">
+                  <div class="card" >
+                          <div class="card-header">
+                             Completed Exercises
+                          </div>
+                          <ul class="list-group list-group-flush" id="completed-exercises">
+                              <li class="list-group-item" id="default-message">No Exercises added yet!</li>
+                              <li *ngFor="let x of exercise.exList2; index as i" class="list-group-item">
+                                {{x}}
+                            </li>
+                          </ul>
+                  </div>
+
+              </div>
+          </div>           
+      </div>
+  </div>                
+</div>

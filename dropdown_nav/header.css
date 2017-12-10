@@ -1,0 +1,54 @@
+header {
+    box-sizing: border-box;
+    color: #6C5A89;
+}
+
+body { 
+    background-image: url("Reine, Norway winter.jpg"); 
+}
+
+a { 
+    text-decoration: none;
+    color: #55F2A7;
+}
+
+.menu {
+    width: 100%;
+    list-style-type: none;
+    color: #55F2A7;
+    background-color: #010101;
+    margin: 0;
+}
+
+.menu li {
+    display: block;
+    padding: 5px;
+            
+}
+			
+.menu>li {
+    display:inline-grid;
+    width: 100px;
+}
+			
+.menu li:hover {
+    background-color: #03A56A;
+			
+}
+
+.menu ul {
+    display: none;
+    position: absolute;
+    width: 200px;
+    background-color: #035C52;
+    border: 1px solid #035C52;
+    margin-left: -5px;
+    margin-top: 5px;
+    padding: 0;
+}
+
+.menu li:hover ul {
+    display: grid;
+    color: #55F2A7;
+				
+}

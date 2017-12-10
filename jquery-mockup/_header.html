@@ -1,0 +1,24 @@
+    <head>
+        <style>
+            body {
+                background-image: url("background_beach.jpg");
+            }
+        </style>
+    </head>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-1">
+                    <img src="logo.png" style="width:100%" />
+                </div>
+                <h2 class="col-md-11">FitU</h2>
+            </div>
+            
+            <div id="nav-placeholder"></div>
+        </div>
+    </header>
+    <script>
+        $(function(){
+            $("#nav-placeholder").load("_nav.html");
+        })
+    </script>
