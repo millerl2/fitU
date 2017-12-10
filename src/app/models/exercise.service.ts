@@ -6,16 +6,16 @@ import { Http } from '@angular/http';
 export class ExerciseService {
 
   exercises: string;
-  count: number = 0;
 
   constructor(private ExList: ExList) { }
 
   add(ex: string){
     this.exercises = ex;
+    console.log(this.exercises);
     
 
-    this.ExList.eList2[this.count] = this.exercises;
-    this.count++;
+    this.ExList.eList.push(this.exercises);
+    console.log(this.ExList.eList);
 
   }
 

@@ -7,11 +7,5 @@ export class Exercise{
 }
 
 export class ExList {
-    eList2: string[] = ["running","swimming","pilates"];
-    eList: Exercise[] = [
-        { name: "Pilates" },
-        { name: "Running" },
-        { name: "Swimming"},
-        { name: "Yoga"}
-    ]
+    eList: string[] = ["running","swimming","pilates"];
 }

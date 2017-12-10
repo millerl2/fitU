@@ -7,7 +7,7 @@
               </div>
               <div class="form-group row">
                 <div class="col-sm-10">
-                <input type="text" class="form-control" id="inputEx" placeholder="Exercise" [(ngModel)]="name"> 
+                <input type="text" class="form-control" id="inputEx" placeholder="Exercise" [(ngModel)]="exName"> 
                 </div>
                 <a class="btn btn-primary"  (click)="add()">Add Exercise</a>
             </div>
@@ -21,8 +21,7 @@
                              Completed Exercises
                           </div>
                           <ul class="list-group list-group-flush" id="completed-exercises">
-                              <li class="list-group-item" id="default-message">No Exercises added yet!</li>
-                              <li *ngFor="let x of exercise.exList2; index as i" class="list-group-item">
+                              <li *ngFor="let x of list.eList" class="list-group-item">
                                 {{x}}
                             </li>
                           </ul>
