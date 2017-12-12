@@ -4,18 +4,18 @@ import { Http } from '@angular/http';
 
 @Injectable()
 export class ExerciseService {
-
+  apiRoot: string = "//localhost:4200";
   exercises: string;
 
-  constructor(private ExList: ExList) { }
+  constructor(public exList: ExList) { }
 
   add(ex: string){
     this.exercises = ex;
     console.log(this.exercises);
     
 
-    this.ExList.eList.push(this.exercises);
-    console.log(this.ExList.eList);
+    this.exList.eList.push(this.exercises);
+    console.log(this.exList.eList);
 
   }
 

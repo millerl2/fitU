@@ -7,5 +7,5 @@ export class Exercise{
 }
 
 export class ExList {
-    eList: string[] = ["running","swimming","pilates"];
+    eList: string[] = [];
 }
