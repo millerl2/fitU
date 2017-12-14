@@ -27,10 +27,14 @@ export class ExercisesComponent implements OnInit {
   add(e:MouseEvent, i: number){
     console.log(this.exName);
     this.exercise.add(this.exName);
-    this.temp.push(this.exName);
     
+    
+/* --------- this works!! but does not update the view ----------
+    this.exercise.add(this.exName);
+*/
 /* --------- this works!! but does not hold data when page is refreshed ----------
-    this.exercise.add(this.exName);*/
+    this.temp.push(this.exName);
+*/
 
     this.update();e.preventDefault(); 
     
