@@ -4,8 +4,9 @@ import { Http } from '@angular/http';
 
 @Injectable()
 export class ExerciseService {
-  apiRoot: string = "//localhost:4200";
+  apiRoot: string;
   exercises: string;
+  /*list: string[] = [];*/
 
   constructor(public exList: ExList) { }
 
@@ -16,6 +17,8 @@ export class ExerciseService {
 
     this.exList.eList.push(this.exercises);
     console.log(this.exList.eList);
+    /*this.list.push(ex);*/
+
 
   }
 
