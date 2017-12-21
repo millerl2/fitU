@@ -18,7 +18,7 @@ export class ExerciseService {
     window.fbAsyncInit = function() {
       console.log("initializing");
       FB.init({
-        appId      : '161753371106684',
+        appId      : '1392086567579858',
         cookie     : true,
         xfbml      : true,
         version    : 'v2.11'
