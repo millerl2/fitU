@@ -13,7 +13,6 @@ import { RegisterComponent } from './register/register.component';
 import { PlanComponent } from './plan/plan.component';
 import { ExercisesComponent } from './exercises/exercises.component';
 import { ExerciseService } from './models/exercise.service';
-import { ExList } from './models/exercise';
 
 @NgModule({
   declarations: [
@@ -34,11 +33,11 @@ import { ExList } from './models/exercise';
       { path: "login", component: LoginComponent },
       { path: "register", component: RegisterComponent },
       { path: "plan", component: PlanComponent },
-      { path: "exercises", component: ExercisesComponent },
+      { path: "exercise", component: ExercisesComponent },
       { path: "", pathMatch: "full", redirectTo: "/home" }
   ])
   ],
-  providers: [ExerciseService, ExList],
+  providers: [ExerciseService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

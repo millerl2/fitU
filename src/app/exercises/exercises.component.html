@@ -5,12 +5,23 @@
               <div class="card-header">
                   Exercises
               </div>
-              <div class="form-group row">
-                <div class="col-sm-10">
-                <input type="text" class="form-control" id="inputEx" placeholder="Exercise" [(ngModel)]="exName"> 
-                </div>
-                <a class="btn btn-primary"  (click)="add()">Add Exercise</a>
-            </div>
+              <ul class="list-group list-group-flush"  >
+                <li id="exercise" *ngFor="let x of me.exercises; index as i" 
+                    class="list-group-item" style="background-color: #6C5A89"
+                    
+                    >
+                    {{x.text}}
+
+                    
+                    <input type="number" class="form-control" id="calories" value="0" [(ngModel)]="calories">
+                    <label for="calories">calories</label>
+                    <div class="button" type="button" (click)="submitExercise($event, x, i,calories)">submit</div>
+                </li>
+
+
+
+                
+            </ul>
           </div>                  
       </div>
       <div class="col-md-9">
@@ -21,8 +32,9 @@
                              Completed Exercises
                           </div>
                           <ul class="list-group list-group-flush" id="completed-exercises">
-                              <li *ngFor="let x of temp" class="list-group-item">
-                                {{x}}
+                              <li *ngFor="let x of me.completed" class="list-group-item">
+                                {{x.text}} 
+                                <span class="badge">{{x.calories}} calories</span>
                             </li>
                           </ul>
                   </div>

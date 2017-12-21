@@ -1,12 +1,13 @@
 {
   "name": "2017fall",
   "version": "1.0.0",
-  "description": "what do you meme",
+  "description": "Exercise Tracker FitU",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "node-sass jquery-mockup/src --output jquery-mockup/dist --watch",
-    "webpack:main": "webpack jquery-mockup/src/main.js jquery-mockup/dist/bundle.js --optimize-minimize"
+    "webpack:main": "webpack jquery-mockup/src/main.js jquery-mockup/dist/bundle.js --optimize-minimize",
+    "server": "nodemon --watch server server/index.js"
   },
   "repository": {
     "type": "git",
@@ -42,6 +43,7 @@
       "sass-loader": "^6.0.6",
       "style-loader": "^0.18.2",
       "ts-loader": "^2.3.7",
+      "nodemon": "^1.14.0",
 
       "@angular/cli": "1.5.0",
       "@angular/compiler-cli": "^5.0.0",

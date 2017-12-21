@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { ExerciseService } from '../models/exercise.service';
 
 @Component({
   selector: 'app-login',
@@ -8,13 +9,17 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  name: string;
+  password: string;
+
+  constructor(private router: Router, private exercise: ExerciseService) { }
 
   ngOnInit() {
   }
 
   login(){
-    this.router.navigate(['/exercises']);
+    this.exercise.login(this.name, this.password);
+    
   }
 
 }
