@@ -22,4 +22,8 @@ export class LoginComponent implements OnInit {
     
   }
 
+  loginF(){
+    this.exercise.loginFB();
+  }
+
 }

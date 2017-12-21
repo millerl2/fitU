@@ -57,7 +57,7 @@ input[type=text], input[type=password] {
 .list-group-item{
     background-color: white;
     border-color: #6C5A89;
-    color:#6C5A89;
+    color:white;
 }
 
 .list-group-item:hover{

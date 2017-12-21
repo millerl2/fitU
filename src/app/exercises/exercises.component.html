@@ -7,14 +7,14 @@
               </div>
               <ul class="list-group list-group-flush"  >
                 <li id="exercise" *ngFor="let x of me.exercises; index as i" 
-                    class="list-group-item" style="background-color: #6C5A89"
+                    class="list-group-item" style="background-color: #6C5A89; color:white"
                     
                     >
                     {{x.text}}
 
                     
                     <input type="number" class="form-control" id="calories" value="0" [(ngModel)]="calories">
-                    <label for="calories">calories</label>
+                    <label for="calories">calories burned</label>
                     <div class="button" type="button" (click)="submitExercise($event, x, i,calories)">Submit</div>
                 </li>
 
